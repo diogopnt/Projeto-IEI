@@ -19,7 +19,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 { name: 'Daihatsu', y: 3 },
                 { name: 'Subaru', y: 10 },
                 { name: 'Mitsubishi', y: 20 }
-            ]
+            ],
+            dataLabels: {
+                style: {
+                    fontSize: '12px'
+                }
+            }
         }]
     });
 });
