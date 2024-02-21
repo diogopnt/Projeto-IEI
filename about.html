@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>About</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="carrosStyle.css">
@@ -13,14 +14,43 @@
 
 
 <body style="background-image: none;">
-    <div id="divCabecalho">
+    <!--<div id="divCabecalho">
         <div id="titleCabecalho">
             <h4><a href="index.html">Introdução à Engenharia Informática</a></h4>
         </div>
         <div id="imageCabecalho">
             <a href="index.html"><img src="images/ua_png.png" alt="Logo UA" id="image"></a>
         </div>
-    </div>
+    </div>-->
+
+    <nav class="navbar navbar-default navbar-fixed-top" id="navbar" style="margin-top: 40px;">
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="historia.html">História da Indústria</a></li>
+                <li class="dropdown" style="cursor: pointer;">
+                    <a class="dropdown-toggle" data-toggle="dropdown">
+                        Carros<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="carros.html?tab=menu1">Características</a></li>
+                        <li class="divider"></li>
+                        <li><a href="carros.html?tab=menu2">Fabricantes</a></li>
+                        <li class="divider"></li>
+                        <li><a href="carros.html?tab=menu3">Desportivos</a></li>
+                    </ul>
+                </li>
+                <li class="active"><a href="influencia.html">Influência Mundial</a></li>
+                <li><a href="noturno.html">Vida Noturna Automobilístisca</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="about.html" target="_blank">
+                        <span class="glyphicon glyphicon-user"></span> About</a>
+                </li>
+                <li><a target="_blank"></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <div id="content">
         <div id="titleBody">
             <h1 style="text-align: center;"><b style="color: black;font-size: 80px;">Indústria Automóvel Japonesa</b>
@@ -181,4 +211,5 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="graphic.js"></script>
+
 </html>
