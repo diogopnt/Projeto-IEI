@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Carros</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="carrosStyle.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" id="navbar" style="margin-top: 40px;">
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="historia.html">História da Indústria</a></li>
+                <li class="dropdown active" style="cursor: pointer;">
+                    <a class="dropdown-toggle" data-toggle="dropdown">
+                        Carros<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#menu1">Características</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#menu2">Fabricantes</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#menu3">Desportivos</a></li>
+                    </ul>
+                </li>
+                <li><a href="influencia.html">Influência Mundial</a></li>
+                <li><a href="noturno.html">Vida Noturna Automobilístisca</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="about.html" target="_blank">
+                        <span class="glyphicon glyphicon-user"></span> About</a>
+                </li>
+                <li><a target="_blank"></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br><br><br><br><br>
+    <div id="content" style="overflow-y: auto; height: 90.1vh;">
+        <div class="wrapper">
+            <div class="tabs-wrapper">
+                <ul id="scroller" class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#menu1" class="tabs-carros">Características</a></li>
+                    <li id="fabricantes"><a data-toggle="tab" href="#menu2" class="tabs-carros">Fabricantes</a></li>
+                    <li><a data-toggle="tab" href="#menu3" class="tabs-carros">Desportivos</a></li>
+                </ul>
+            </div>
+            <div class="tab-content" id="tab-content">
+                <div id="menu1" class="tab-pane fade in active">
+                    <div id="secondTitlePage1">
+                        <h4><b>Características</b></h4>
+                    </div>
+                    <br>
+                    <p style="width: 95%; margin: auto; text-align: justify;
+                    text-justify: inter-word;">O tempo em que os fabricantes de carros tinham características
+                        próprias
+                        acabou. Com o tempo, as melhores soluções foram tornando-se padrão entre
+                        os fabricantes. Além disso, a globalização nunca foi tão intensa como hoje, os
+                        fabricantes fazem parcerias, fusões, trocam funcionários e muitas das vezes até
+                        projetos. No entanto, os carros japoneses sempre foram conhecidos pela sua
+                        qualidade e certas características nunca foram abandonadas pelos fabricantes
+                        japoneses.</p>
+                    <br>
+                    <button class="accordion"><b>Confiabilidade e durabilidade</b></button>
+                    <div class="panel">
+                        <br>
+                        <p style="width: 95%; margin: auto;text-align: justify;
+                        text-justify: inter-word;">A parte mecânica dos carros japoneses é muito simples e robusta,
+                            sendo
+                            reconhecidos pela sua confiabilidade e longevidade. Muitos modelos têm uma
+                            reputação de baixa necessidade de manutenção e alta durabilidade. Marcas
+                            como a Toyota, Honda e Subaru construíram uma reputação sólida
+                            de produzir veículos com baixa necessidade de manutenção ao longo do tempo.</p>
+                        <br>
+                    </div>
+
+                    <button class="accordion"><b>Eficiência e economia de combustível</b></button>
+                    <div class="panel">
+                        <br>
+                        <p style="width: 95%; margin: auto;text-align: justify;
+                        text-justify: inter-word;">Os modelos japoneses são também conhecidos pela sua eficiência
+                            energé-
+                            tica e baixo consumo de combustível. Isto é o resultado de avanços em tecnologias
+                            de motores, design aerodinâmico e foco em veículos híbridos e elétricos</p>
+                        <br>
+                    </div>
+
+                    <button class="accordion"><b>Inovação tecnológica</b></button>
+                    <div class="panel">
+                        <br>
+                        <p style="width: 95%; margin: auto;text-align: justify;
+                        text-justify: inter-word;">Os carros japoneses muitas vezes incorporam tecnologias avançadas,
+                            como
+                            sistemas de assistência, "infotainment" de última geração (sistema de componentes
+                            que oferece várias funções de conforto) e tecnologias de segurança ativa
+                            (segurança que atua na condição á prevenção do cliente) e passiva (atua essencialmente
+                            na proteção dos ocupantes em caso de acidente).</p>
+                        <p style="width: 95%; margin: auto;">Tipos de segurança passiva:</p>
+                        <ul style="width: 95%; margin: auto;">
+                            <li>Cinto de segurança</li>
+                            <li>Encosto de cabeça</li>
+                            <li>Pré-tensores</li>
+                            <li>Airbag</li>
+                            <li>Deformação estrutural</li>
+                        </ul>
+                        <p style="width: 95%; margin: auto;">Tipos de segurança ativa:</p>
+                        <ul style="width: 95%; margin: auto;">
+                            <li>Sistema ABS</li>
+                            <li>Pala Anti-encadeamento</li>
+                            <li>Travões, suspensão e direção JDM</li>
+                        </ul>
+                        <br>
+                    </div>
+                    <button class="accordion"><b>Engenharia e desempenho</b></button>
+                    <div class="panel">
+                        <br>
+                        <p style="width: 95%; margin: auto;text-align: justify;
+                        text-justify: inter-word;">Enquanto a reputação dos carros japoneses é forte em confiabilidade,
+                            algumas marcas também oferecem modelos de alto desempenho.
+                            Estes carros de alta performance são conhecidos pela grande experiência de
+                            condução que oferecem bem como pela enorme ênfase e avanços na tecnologia.</p>
+                        <br>
+                    </div>
+                </div>
+                <div id="menu2" class="tab-pane fade">
+                    <div id="secondTitlePage1">
+                        <h4><b>Fabricantes</b></h4>
+                    </div>
+                    <div style="width: 100%;">
+                        <br>
+                        <p style="width: 80%; margin: auto;text-align: justify;
+                        text-justify: inter-word;">A <a style="cursor: pointer;" onclick="clickMap(0)"
+                                class="tabs-carros"><b>Toyota</b></a>, fundada em 1937 por Kiichiro Toyota, é uma das
+                            maiores
+                            fabricantes do mundo, conhecida por uma ampla gama de veículos, desde carros
+                            econômicos até SUVs e carros de luxo (como a linha Lexus que será explorada
+                            no próximo subcapítulo). Os modelos mais populares incluem o Toyota Camry
+                            e o Toyata Corolla que ocupa pelo quinto ano consecutivo o 1º lugar do ranking
+                            da Focus2Move como o carro mais vendido do mundo.br</p>
+                    </div>
+                    <div style="width: 100%; ">
+                        <br>
+                        <p style="width: 80%; margin: auto; text-align: justify;
+                        text-justify: inter-word;">Outra marca Japonesa que faz bastante sucesso é a Nissan. A
+                            <a style="cursor: pointer;" onclick="clickMap(1) " class="tabs-carros"><b>Nissan</b></a> é
+                            conhecida por ter uma série de modelos que são capazes de atender as necessidades
+                            da população em diferentes momentos de vida. Os veículos da Nissan vão
+                            desde modelos mais compactos e econômicos até camiões. Todos estes veículos
+                            possuem um bom rendimento aliado á tecnologia de ponta na sua construção.
+                        </p>
+                    </div>
+                    <div style="width: 100%;">
+                        <br>
+                        <p style="width: 80%; margin: auto; text-align: justify;
+                        text-justify: inter-word;">Com uma ampla oferta de veículos que variam desde os mais
+                            populares
+                            até modelos mais sofisticados, a <a style="cursor: pointer;" onclick="clickMap(2)"
+                                class="tabs-carros"><b>Honda</b></a> também conquistou o mercado automobil
+                            ístico a nível mundial ocupando o top 10 mundial de marcas mais vendidas.
+                            Os carros da Honda são sinônimo de tradição e qualidade onde todos eles são
+                            conhecidos pela sua segurança e durabilidade. Entre os modelos mais conhecidos,
+                            destacamos o Honda Fit, Civic, City e ainda os modelos SUV HR-V e
+                            CR-V.</p>
+                    </div>
+                    <div style="width: 100%;">
+                        <br>
+                        <p style="width: 80%; margin: auto; text-align: justify;
+                        text-justify: inter-word;">Fundada em 1920, a <a style="cursor: pointer;" onclick="clickMap(3)"
+                                class="tabs-carros"><b>Mazda</b></a> tem uma história rica e tem
+                            sido
+                            reconhecida
+                            por várias características marcantes, como a tecnologia Skyactiv que implementa
+                            nos seus carros. Os carros da Mazda são frequentemente elogiados por oferecer
+                            uma condução responsiva, ágil e divertida, com uma atenção especial para a
+                            sensação e controlo do carro. Os modelos mais vendidos da marca são o Mazda
+                            3, Mazda CX-5 e ainda o icónico Mazda MX-5.</p>
+                    </div>
+                    <br>
+                </div>
+                <div id="myMap"></div>
+                <div id="menu3" class="tab-pane fade">
+                    <div id="secondTitlePage1">
+                        <h4><b>Desportivos</b></h4>
+                    </div>
+                    <br>
+                    <div class="containerSlideShow">
+
+                        <div class="mySlides">
+                            <div class="numbertext">1 / 10</div>
+                            <img src="images/toyota_celica_supra_1.jpeg" class="imgMySlides">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">2 / 10</div>
+                            <img src="images/toyota_celica_supra_2.jpg" class="imgMySlides">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">3 / 10</div>
+                            <img src="images/toyota_supra_1.jpeg" class="imgMySlides">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">4 / 10</div>
+                            <img src="images/toyota_supra_turbo.jpeg" class="imgMySlides">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">5 / 10</div>
+                            <img src="images/nissan_skyline_1.jpeg" class="imgMySlides">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">6 / 10</div>
+                            <img src="images/nissan_skyline_gt-r.jpeg" class="imgMySlides">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">7 / 10</div>
+                            <img src="images/nismo_nissan_skyline_gt-r_2.jpg" class="imgMySlides">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">8 / 10</div>
+                            <img src="images/Nissan-GT-R-2023.jpg" class="imgMySlides">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">9 / 10</div>
+                            <img src="images/Honda-NSX.jpg" class="imgMySlides">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">10 / 10</div>
+                            <img src="images/Honda-NSX-2023.jpg" class="imgMySlides">
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                        <div class="caption-container">
+                            <p id="caption"></p>
+                        </div>
+
+                        <div class="row">
+                            <div class="column">
+                                <img class="demo cursor" src="images/toyota_celica_supra_1.jpeg"
+                                    style="width:100%;height: 100%;" onclick="currentSlide(1)" alt="Toyota Celica Supa 1º Geração - Lançado em 1979 e conhecido no Japão como Celica XX e no restante
+                            mundo como Celica Supra, o cupê desportivo surgiu basicamente como uma
+                            variação com motores de 6 cilindros do modelo Celica, sendo que o mais potente
+                            deles era um bloco 2.6 que desenvolvia 140 cv.">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="images/toyota_celica_supra_2.jpg"
+                                    style="width:100%;height: 100%;" onclick="currentSlide(2)" alt="A sua 2ª geração, conhecida como A60, foi lançada em 1981. Embora ainda
+                                    parte da família Celica, trazia uma carroceria completamente nova, com uma
+                                    frente em forma de cunha e com faróis escamoteáveis.">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="images/toyota_supra_1.jpeg"
+                                    style="width:100%;height: 100%;" onclick="currentSlide(3)" alt="A 3ª geração do Toyota Supra estreou-se em 1986 sendo que pela primeira
+                                    vez rompia os laços com o Celica, tornando-se assim um cupê independente e
+                                    adotando o nome de Toyota Supra.
+                                    Ao deixar a família Celica, o Supra teve as suas primeiras alterações significativas 
+                                    passando assim a ser um carro com a tração nas rodas traseiras e mais
+                                    compacto, no entanto mais potente, chegando a produzir 280 cv.">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="images/toyota_supra_turbo.jpeg"
+                                    style="width:100%;height: 100%;" onclick="currentSlide(4)" alt="Em 1993, a 3ª terceira geração saiu de cena para a entrada da geração A80
+                                    (4º geração). Toda nova e com uma carroceria de linhas arredondadas, tinha
+                                    como opção mais potente o Toyota Supra 2JZ 3.0 turbo capaz de atingir até
+                                    330 cv.
+                                    No entanto, as mudanças nas regras de emissões levaram ao fim das vendas
+                                    do modelo no mercado americano em 1998 sendo que em 2002 foi a vez de a
+                                    Toyota encerrar definitivamente a produção deste Supra.">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="images/nissan_skyline_1.jpeg"
+                                    style="width:100%;height: 100%;" onclick="currentSlide(5)" alt="O Nissan GT-R é um dos carros que ultrapassaram a barreira dos automó-
+                                    veis comuns para se tornarem lendas. Conhecido popularmente como Godzilla,
+                                    o Nissan GT-R é uma lenda entre os carros japoneses, sendo atualmente o único
+                                    automóvel de passeio do país asiático capaz de ultrapassar a barreira dos 500cv.
+                                    Apesar de ter sido lançado apenas em 2007, o superdesportivo é herdeiro de
+                                    uma história que começou nos anos 1960, com o lançamento do 1º Nissan Skyline
+                                    GT-R. Apesar do Skyline originalmente pertencer a Prince Motor Company,
+                                    tornou-se um Nissan em 1966 quando a Prince foi comprada pela Nissan.">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="images/nissan_skyline_gt-r.jpeg"
+                                    style="width:100%;height: 100%;" onclick="currentSlide(6)" alt="Em 1989, o Skyline voltou com a versão GT-R. Esta 3º geração foi verdadeiramente
+                                    precursora do carro que conhecemos hoje. O R32 Skyline GT-R tinha
+                                    tração nas 4 rodas e o famoso motor Nissan RB26DETT de seis cilindros em
+                                    linha e 2 turbos, que produzia 280 cv de potência.">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="images/nismo_nissan_skyline_gt-r_2.jpg"
+                                    style="width:100%;height: 100%;" onclick="currentSlide(7)" alt="A 4ª e última geração do Skyline GT-R foi produzida entre 1999 e 2002. O
+                                    sucesso no filme Velozes e Furiosos, teve como versão mais extrema a Z-Tune,
+                                    uma modificação feita pela própria fábrica em unidades usadas da versão R34
+                                    que tinham um motor 2.8 de seis cilindros em linha e 500 cv.">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="images/Nissan-GT-R-2023.jpg"
+                                    style="width:100%;height: 100%;" onclick="currentSlide(8)" alt="O Nissan GT-R ainda segue em produção (híbrida) praticamente sem mudan
+                                    ças visuais em relação ao carro ilustrado na imagem acima, no entanto, ao
+                                    longo deste período de 16 anos o modelo não deixou de ganhar potência.
+                                    Em 2020, os engenheiros da Nissan incorporaram novos turbocompressores
+                                    ao motor V6, criando a versão GT-R Nismo, que atingia a marca do 607 cv e
+                                    permitia ao superdesportivo acelarar dos 0-100 km/h em 2,5 segundos.">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="images/Honda-NSX.jpg" style="width:100%;height: 100%;"
+                                    onclick="currentSlide(9)" alt="A Honda pretendia criar um superdesportivo, que também permitisse uma
+                                    utilização quotidiana. Aproveitando o seu regresso às competições de Fórmula
+                                    1, a equipa de pesquisa e desenvolvimento da Honda começou as pesquisas para
+                                    a construção de um carro com o motor em posição central e de tração traseira.
+                                    Assim em 1984 surgia o Honda City, começando a ser desenvolvido o Honda
+                                    NSX com base nos estudos desde mesmo modelo.">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="images/Honda-NSX-2023.jpg"
+                                    style="width:100%;height: 100%;" onclick="currentSlide(10)" alt="Este modelo surgiu como concorrente direto à Porsche ou a Ferrari e 25 anos
+                                    depois, tendo-se tornado um automóvel icónico para todos os fãs da Honda, foi
+                                    lançado o modelo de última geração do NSX, numa versão híbrida que combina
+                                    o motor V6 de 3.5 litros bi-turbo com 507 cv e 3 motores elétricos.">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+<script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="map.js"></script>
+<script src="graphic.js"></script>
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("demo");
+        let captionText = document.getElementById("caption");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+    }
+
+    // Adiciona um ouvinte de evento para os links da barra de navegação
+    $(".navbar-nav li a").click(function () {
+        // Obtém o identificador da aba associado ao link
+        var tabId = $(this).attr("href");
+
+        // Atualiza a aba ativa na barra de navegação
+        $(".nav-tabs a[href='" + tabId + "']").tab("show");
+    });
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+        var urlParams = new URLSearchParams(window.location.search);
+        var activeTab = urlParams.get('tab');
+
+        if (activeTab) {
+            var tabLink = $('a[data-toggle="tab"][href="#' + activeTab + '"]');
+            if (tabLink.length) {
+                tabLink.tab('show');
+            }
+        }
+    });
+    
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }
+
+</script>
+
+
+</html>
