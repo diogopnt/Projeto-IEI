@@ -8,7 +8,12 @@ $(document).ready(function () {
                 data: [
                     { name: "Fábio Simões", y: 50 },
                     { name: "Diogo Pinto", y: 50 },
-                ]
+                ],
+                dataLabels: {
+                    style: {
+                        fontSize: '12px'
+                    }
+                }
             },
         ]
     });
