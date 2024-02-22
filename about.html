@@ -6,7 +6,9 @@
     <title>About</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="carrosStyle.css">
 
@@ -23,32 +25,46 @@
         </div>
     </div>-->
 
-    <nav class="navbar navbar-default navbar-fixed-top" id="navbar" style="margin-top: 40px;">
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="historia.html">História da Indústria</a></li>
-                <li class="dropdown" style="cursor: pointer;">
-                    <a class="dropdown-toggle" data-toggle="dropdown">
-                        Carros<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="carros.html?tab=menu1">Características</a></li>
-                        <li class="divider"></li>
-                        <li><a href="carros.html?tab=menu2">Fabricantes</a></li>
-                        <li class="divider"></li>
-                        <li><a href="carros.html?tab=menu3">Desportivos</a></li>
-                    </ul>
-                </li>
-                <li class="active"><a href="influencia.html">Influência Mundial</a></li>
-                <li><a href="noturno.html">Vida Noturna Automobilístisca</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="about.html" target="_blank">
-                        <span class="glyphicon glyphicon-user"></span> About</a>
-                </li>
-                <li><a target="_blank"></a>
-                </li>
-            </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light rounded navbar-fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="historia.html">História da Indústria</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="carros.html" id="navbarScrollingDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Carros
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="carros.html?tab=menu1">Características</a></li>
+                            <li><a class="dropdown-item" href="carros.html?tab=menu2">Frabicantes</a></li>
+                            <li><a class="dropdown-item" href="carros.html?tab=menu3">Desportivos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="influencia.html">Influência Mundial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="noturno.html">Vida Noturna Automobilístisca</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li><a target="_blank"></a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
     <div id="content">
@@ -64,7 +80,7 @@
                 <div id="myGraph" style="width: 400px; height: 300px;margin: auto;"></div>
             </div>
             <br>
-            <div class="aboutAccordion">
+            <!--             <div class="aboutAccordion">
                 <button class="accordion"><b>Sobre o Trabalho</b></button>
                 <div class="panel">
                     <br>
@@ -203,12 +219,85 @@
                 </div>
 
 
-            </div>
-            <input type="button" class="btn btn-success" value="Close" onclick="self.close()" id="btnClose">
+            </div> -->
+
+            <div class="accordion" id="accordionExample" style="background-color: white;">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Sobre o Trabalho
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Este trabalho explora a influência da indústria automobilística
+                        japonesa
+                        a nível mundial, examinando o impacto dos principais fabricantes, como
+                        Toyota, Nissan, Honda e a Mazda, na evolução da tecnologia automóvel e nas
+                        preferências dos consumidores ao redor do mundo. Uma parte significativa deste
+                        trabalho aborda as corridas ilegais noturnas no Japão, conhecidas como "hashiriya
+                        ", destacando a sua contribuição para a cultura automobilística japonesa e
+                        o seu papel na evolução tecnológica dos carros de alto desempenho.
+                        Oferece ainda, uma visão abrangente da indústria automobilística
+                        japonesa, desde a sua história e características dos veículos até ao
+                        seu impacto global, incluindo análises sobre carros desportivos icônicos e a peculiaridade
+                        das corridas ilegais noturnas, demonstrando o significativo papel do
+                        Japão na indústria automóvel mundial.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Sobre o site
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Este Website, realizado em Janeiro de 2024, no âmbito da unidade
+                        curricular de Introdução à Engenharia Informática
+                        curso de Engenharia de Computadores e Informática, teve por base um relatório desenvolvido na
+                        mesma disciplina, <a
+                            href="https://github.com/detiuaveiro/infor2023-ap-g-infor2023-ap-g57">aqui</a>.
+                        No desenvolvimento do projeto foi utilizada a plataforma de gestão de repositórios GitHub. Por
+                        fim,
+                        com este Website pretendeu-se dar
+                        a conhecer um pouco mais sobre a Indústria Automotiva Japonesa, a sua história e a influência a
+                        nível mundial.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Agradecimentos
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Este trabalho é o colmatar de um longo processo de esforço e
+                        dedicação por
+                        parte dos elementos do grupo, no entanto, este projeto não teria sido realizado
+                        com sucesso sem a ajuda e apoio de diversas pessoas que, de forma direta ou
+                        indireta, nele colaboraram.
+                        Todos os elementos do grupo gostariam de agradecer, de forma muito especial ao professor António
+                        Manuel Adrego da Rocha, pela ajuda disponibilizada
+                        durante todo o processo e por se demonstrar sempre disponível para esclarecer qualquer dúvida
+                        que pudesse surgir, transmitindo todos os conhecimentos
+                        necessários para que o trabalho pudesse correr sempre da melhor maneira.
+                        O nosso muito obrigado.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!--<input type="button" class="btn btn-success" value="Close" onclick="self.close()" id="btnClose">-->
         </div>
     </div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 <script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="graphic.js"></script>
 
