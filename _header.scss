@@ -1,0 +1,26 @@
+@import './variaveis';
+
+@mixin flexCneter($direction, $background){
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+    background-color: $background;
+}
+
+header{
+
+    @include flexCneter(column, lightblue);
+
+    text-align: center;
+    font: $font-stack;
+    
+    button{
+        background-color: $button-color;
+        border-radius: $borders;
+        &:hover{
+            background-color: green;
+        }
+    }
+}

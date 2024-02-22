@@ -1,0 +1,35 @@
+@import './variaveis.css';
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: lightblue;
+  text-align: center;
+  font: Helvetica, sans-serif;
+}
+header button {
+  background-color: red;
+  border-radius: 5px;
+}
+header button:hover {
+  background-color: green;
+}
+
+.cars {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: #eeeeee;
+  font: 100% Helvetica, sans-serif;
+  color: green;
+}
+.cars button {
+  border-radius: 5px;
+}
+.cars button:hover {
+  background-color: yellow;
+}/*# sourceMappingURL=stylesT.css.map */

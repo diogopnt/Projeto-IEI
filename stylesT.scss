@@ -1,0 +1,17 @@
+@import './variaveis.css';
+@import './header';
+
+.cars{
+
+    @include flexCneter(row, #eeeeee);
+
+    font: 100% $font-stack; 
+    color: $primary-color;
+
+    button{
+        border-radius: $borders;
+        &:hover{
+            background-color: yellow;
+        }
+    }
+}
