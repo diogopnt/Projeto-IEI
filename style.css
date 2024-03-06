@@ -83,6 +83,7 @@
 }
 #titleBody>h1 {
     text-align: left;
+    margin-top: -50px;
     margin-left: 5%;
 }
 
@@ -90,23 +91,23 @@
     color: white;
     font-size: 70px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
 }
 
 #titleBody>h2 {
     color: white;
     font-size: 60px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-top: 220px;
 }
 .linkIndex{
     color: white;
     font-size: 70px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 #titleBody {
-    margin: auto;
     text-align: center;
-    padding-top: 25vh;
 }
 
 
@@ -417,13 +418,23 @@
     box-shadow: 3px 10px 15px -12px #333333, -3px 0px 15px -12px #333333;
 }
 
+.wrapperTesteH{
+    max-width: 80%;
+    margin: 50px auto;
+    padding: 20px 0;
+    background-color: #eeeeee;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 3px 10px 15px -12px #333333, -3px 0px 15px -12px #333333;
+}
+
 
 body {
-    background-image: url("images/bg.jpg");
-    background-color: white;
+    background-image: url("images/bg.jpg"); 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 /*About*/
@@ -432,4 +443,35 @@ body {
     width: 80%;
     align-content: center;
     margin: auto;
+}
+
+
+/*Media Query´s - Responsividade*/
+
+@media screen and (max-width: 1220px){
+    #titleBody>h1>b {
+        font-size: 60px;
+    }
+
+    #titleBody {
+        margin: auto;
+        text-align: center;
+        padding-top: 15vh;
+        padding-left: 6%;
+    }
+
+    #titleBody>h2>a.linkIndex {
+        font-size: 30px;
+        margin-right: 22px;
+    }
+
+    body {
+        background-image: url("images/bg_resized.jpg");
+    }
+
+    .wrapperTesteH{
+        max-width: 78.5%;
+        margin-right: 45px;
+    }
+    
 }

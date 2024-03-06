@@ -5,40 +5,59 @@
     <meta charset="UTF-8">
     <title>Carros</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="carrosStyle.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-default navbar-fixed-top" id="navbar" style="margin-top: 40px;">
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="historia.html">História da Indústria</a></li>
-                <li class="dropdown active" style="cursor: pointer;">
-                    <a class="dropdown-toggle" data-toggle="dropdown">
-                        Carros<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#menu1">Características</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#menu2">Fabricantes</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#menu3">Desportivos</a></li>
-                    </ul>
-                </li>
-                <li><a href="influencia.html">Influência Mundial</a></li>
-                <li><a href="noturno.html">Vida Noturna Automobilístisca</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="about.html" target="_blank">
-                        <span class="glyphicon glyphicon-user"></span> About</a>
-                </li>
-                <li><a target="_blank"></a>
-                </li>
-            </ul>
+    <br><br>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light rounded"
+        style="width: 80%; margin-left: 10%; position: fixed;">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="historia.html">História da Indústria</a>
+                    </li>
+                    <li class="nav-item dropdown  active">
+                        <a class="nav-link dropdown-toggle" href="carros.html?tab=menu1" id="navbarScrollingDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Carros
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="carros.html?tab=menu1">Características</a></li>
+                            <li><a class="dropdown-item" href="carros.html?tab=menu2">Frabicantes</a></li>
+                            <li><a class="dropdown-item" href="carros.html?tab=menu3">Desportivos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="influencia.html">Influência Mundial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="noturno.html">Vida Noturna Automobilístisca</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li><a target="_blank"></a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
     <br><br><br><br><br>
@@ -46,9 +65,9 @@
         <div class="wrapper">
             <div class="tabs-wrapper">
                 <ul id="scroller" class="nav nav-tabs">
-                    <li class="active"><a data-toggle="tab" href="#menu1" class="tabs-carros">Características</a></li>
-                    <li id="fabricantes"><a data-toggle="tab" href="#menu2" class="tabs-carros">Fabricantes</a></li>
-                    <li><a data-toggle="tab" href="#menu3" class="tabs-carros">Desportivos</a></li>
+                    <li class="active"><a data-toggle="tab" href="#menu1" class="tabs-carros"></a></li>
+                    <li id="fabricantes"><a data-toggle="tab" href="#menu2" class="tabs-carros"></a></li>
+                    <li><a data-toggle="tab" href="#menu3" class="tabs-carros"></a></li>
                 </ul>
             </div>
             <div class="tab-content" id="tab-content">
@@ -67,7 +86,7 @@
                         qualidade e certas características nunca foram abandonadas pelos fabricantes
                         japoneses.</p>
                     <br>
-                    <button class="accordion"><b>Confiabilidade e durabilidade</b></button>
+           <!--          <button class="accordion"><b>Confiabilidade e durabilidade</b></button>
                     <div class="panel">
                         <br>
                         <p style="width: 95%; margin: auto;text-align: justify;
@@ -126,7 +145,72 @@
                             Estes carros de alta performance são conhecidos pela grande experiência de
                             condução que oferecem bem como pela enorme ênfase e avanços na tecnologia.</p>
                         <br>
-                    </div>
+                    </div> -->
+                    <div class="accordion" id="accordionExample" style="background-color: #eeeeee;">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Confiabilidade e durabilidade
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                A parte mecânica dos carros japoneses é muito simples e robusta,
+                                sendo
+                                reconhecidos pela sua confiabilidade e longevidade. Muitos modelos têm uma
+                                reputação de baixa necessidade de manutenção e alta durabilidade. Marcas
+                                como a Toyota, Honda e Subaru construíram uma reputação sólida
+                                de produzir veículos com baixa necessidade de manutenção ao longo do tempo.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Inovações tecnologicas
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Os carros japoneses muitas vezes incorporam tecnologias avançadas,
+                                como
+                                sistemas de assistência, "infotainment" de última geração (sistema de componentes
+                                que oferece várias funções de conforto) e tecnologias de segurança ativa
+                                (segurança que atua na condição á prevenção do cliente) e passiva (atua essencialmente
+                                na proteção dos ocupantes em caso de acidente).</p>
+                            <p style="width: 95%; margin: auto;">Tipos de segurança passiva:</p>
+                            <ul style="width: 95%; margin: auto;">
+                                <li>Cinto de segurança</li>
+                                <li>Encosto de cabeça</li>
+                                <li>Pré-tensores</li>
+                                <li>Airbag</li>
+                                <li>Deformação estrutural</li>
+                            </ul>
+                            <p style="width: 95%; margin: auto;">Tipos de segurança ativa:</p>
+                            <ul style="width: 95%; margin: auto;">
+                                <li>Sistema ABS</li>
+                                <li>Pala Anti-encadeamento</li>
+                                <li>Travões, suspensão e direção JDM</li>
+                            </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Engenharia e desempenho
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Enquanto a reputação dos carros japoneses é forte em confiabilidade,
+                                algumas marcas também oferecem modelos de alto desempenho.
+                                Estes carros de alta performance são conhecidos pela grande experiência de
+                                condução que oferecem bem como pela enorme ênfase e avanços na tecnologia.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                 </div>
                 <div id="menu2" class="tab-pane fade">
                     <div id="secondTitlePage1">
@@ -340,7 +424,10 @@
 </body>
 <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
 <script src="map.js"></script>
 <script src="graphic.js"></script>
 <script>
@@ -393,7 +480,7 @@
             }
         }
     });
-    
+
     var acc = document.getElementsByClassName("accordion");
     var i;
 

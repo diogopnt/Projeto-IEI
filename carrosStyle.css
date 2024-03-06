@@ -249,3 +249,10 @@ th {
   margin-left: 2%;
   margin-top: 2%;
 }
+
+.accordion {
+  --bs-accordion-btn-bg: #eeeeee;
+  --bs-accordion-active-bg: #eeeeee;
+  --bs-accordion-bg: #eeeeee;
+}
+
