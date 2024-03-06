@@ -91,6 +91,7 @@
     color: white;
     font-size: 70px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
 }
 
 #titleBody>h2 {
@@ -417,6 +418,16 @@
     box-shadow: 3px 10px 15px -12px #333333, -3px 0px 15px -12px #333333;
 }
 
+.wrapperTesteH{
+    max-width: 80%;
+    margin: 50px auto;
+    padding: 20px 0;
+    background-color: #eeeeee;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 3px 10px 15px -12px #333333, -3px 0px 15px -12px #333333;
+}
+
 
 body {
     background-image: url("images/bg.jpg"); 
@@ -451,10 +462,16 @@ body {
 
     #titleBody>h2>a.linkIndex {
         font-size: 30px;
+        margin-right: 22px;
     }
 
     body {
         background-image: url("images/bg_resized.jpg");
+    }
+
+    .wrapperTesteH{
+        max-width: 78.5%;
+        margin-right: 45px;
     }
     
 }
