@@ -83,6 +83,7 @@
 }
 #titleBody>h1 {
     text-align: left;
+    margin-top: -50px;
     margin-left: 5%;
 }
 
@@ -105,9 +106,7 @@
 }
 
 #titleBody {
-    margin: auto;
     text-align: center;
-    padding-top: 25vh;
 }
 
 
