@@ -474,5 +474,10 @@ body {
         max-width: 78.5%;
         margin-right: 45px;
     }
+
+
+    #progress-bar-container li .step-inner {
+        font-size: 7px;
+    }
     
 }
