@@ -82,7 +82,6 @@
 }
 #titleBody>h1 {
     text-align: left;
-    margin-top: -50px;
     text-align: center;
 }
 
@@ -97,7 +96,7 @@
     color: white;
     font-size: 60px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding-top: 220px;
+    padding-top: 300px;
 }
 .linkIndex{
     color: white;
@@ -459,7 +458,11 @@ body {
     }
 
     #titleBody {
-        padding-top: 15vh;
+        padding-top: 7vh;
+    }
+
+    #titleBody>h2{
+        padding-top: 220px;
     }
 
     #titleBody>h2>a.linkIndex {
