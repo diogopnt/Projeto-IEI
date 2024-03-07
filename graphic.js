@@ -67,8 +67,6 @@ $(".step05").click(function () {
 // Create a video element
 const video = document.createElement('video');
 video.controls = true;
-video.width = 600;
-video.height = 300;
 
 
 const sourceMP4 = document.createElement('source');

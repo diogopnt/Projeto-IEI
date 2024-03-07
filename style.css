@@ -359,9 +359,14 @@
 }
 
 #videoContainer {
-    text-align: center;
-    margin-left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
+#videoContainer video {
+    width: 400px;
+    height: 300px;
 }
 
 .image-container {
@@ -374,8 +379,6 @@
     font-style: italic;
     color: black;
     font-size: 13px;
-    margin-top: 5px;
-    margin-left: 6%;
 }
 
 .content {
@@ -468,7 +471,7 @@ body {
         background-image: url("images/bg_resized.jpg");
     }
 
-    /*Media Query´s - Responsividade - Página historia.html*/
+    /*Media Query´s - Responsividade - Página historia.html e Página influencia.html*/
 
     .wrapperTesteH{
         max-width: 78.5%;
@@ -480,7 +483,18 @@ body {
         font-size: 7px;
     }
 
-    /*Media Query´s - Responsividade - Página influencia.html*/
+    /*Media Query´s - Responsividade - Página noturno.html*/
+
+    #videoContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    
+    #videoContainer video {
+        width: 300px;
+        height: 250px;
+    }
     
     
 }
