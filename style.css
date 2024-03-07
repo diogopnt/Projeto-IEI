@@ -79,12 +79,10 @@
     text-decoration: none;
     font-size: 120px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: left;
 }
 #titleBody>h1 {
     text-align: left;
-    margin-top: -50px;
-    margin-left: 5%;
+    text-align: center;
 }
 
 #titleBody>h2>a.linkIndex {
@@ -98,7 +96,7 @@
     color: white;
     font-size: 60px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding-top: 220px;
+    padding-top: 300px;
 }
 .linkIndex{
     color: white;
@@ -311,29 +309,36 @@
 
 
 /*About Page*/
-#titleBody>h1 {
+#titleBodyAbout>h1 {
     color: black;
     text-decoration: none;
     font-size: 50px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
-#titleBody>h2>a {
+#titleBodyAbout>h2>a {
     color: black;
     font-size: 30px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
-#titleBody {
+#titleBodyAbout {
     margin: auto;
     text-align: center;
     padding-top: 10vh;
 }
 
+/*
 #btnClose {
     margin-bottom: 20px;
 }
+*/
 
+.aboutAccordion{
+    width: 80%;
+    align-content: center;
+    margin: auto;
+}
 
 /*Vida Noturna Page*/
 #imgCorridas {
@@ -360,9 +365,14 @@
 }
 
 #videoContainer {
-    text-align: center;
-    margin-left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
+#videoContainer video {
+    width: 400px;
+    height: 300px;
 }
 
 .image-container {
@@ -375,8 +385,6 @@
     font-style: italic;
     color: black;
     font-size: 13px;
-    margin-top: 5px;
-    margin-left: 6%;
 }
 
 .content {
@@ -437,41 +445,65 @@ body {
     background-attachment: fixed;
 }
 
-/*About*/
-
-.aboutAccordion{
-    width: 80%;
-    align-content: center;
-    margin: auto;
-}
 
 
 /*Media Query´s - Responsividade*/
 
 @media screen and (max-width: 1220px){
+
+    /*Media Query´s - Responsividade - Página index.html*/
+
     #titleBody>h1>b {
         font-size: 60px;
     }
 
     #titleBody {
-        margin: auto;
-        text-align: center;
-        padding-top: 15vh;
-        padding-left: 6%;
+        padding-top: 7vh;
+    }
+
+    #titleBody>h2{
+        padding-top: 220px;
     }
 
     #titleBody>h2>a.linkIndex {
         font-size: 30px;
-        margin-right: 22px;
+        text-align: center;
     }
 
     body {
         background-image: url("images/bg_resized.jpg");
     }
 
+    /*Media Query´s - Responsividade - Página historia.html e Página influencia.html*/
+
     .wrapperTesteH{
         max-width: 78.5%;
         margin-right: 45px;
     }
+
+
+    #progress-bar-container li .step-inner {
+        font-size: 7px;
+    }
+
+    /*Media Query´s - Responsividade - Página noturno.html*/
+
+    #videoContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    
+    #videoContainer video {
+        width: 300px;
+        height: 250px;
+    }
+    
+    /*Media Query´s - Responsividade - Página about.html*/
+    
+    #titleBodyAbout>h2>a {
+        font-size: 22px;
+    }
+
     
 }
